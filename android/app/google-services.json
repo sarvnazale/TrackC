@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "776948649943",
+    "project_id": "telome-6750f",
+    "storage_bucket": "telome-6750f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776948649943:android:3ee854af59d7884870c592",
+        "android_client_info": {
+          "package_name": "com.example.projectapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776948649943-l1ji7f6ok0mut2h4vrtgfgpog2ud1t5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgjwvz7RGWYXfHiWdZGPg4j5wvEVajAPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776948649943-l1ji7f6ok0mut2h4vrtgfgpog2ud1t5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

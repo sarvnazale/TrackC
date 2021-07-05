@@ -71,6 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _selectedIndex = index;
     });
   }
+
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -90,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+    //hi
     return Scaffold(
       appBar: AppBar(
         title: const Text('BottomNavigationBar Sample'),

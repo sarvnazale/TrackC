@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'home.dart';
-import 'Info.dart';
-import 'Progress.dart';
-void main() {
+import 'package:projectapp/Models/Telomer.dart';
+import 'package:projectapp/services/auth.dart';
+import "Wrapper.dart";
+import 'package:projectapp/pages/home.dart';
+import 'pages/Info.dart';
+import 'pages/Progress.dart';
+import 'package:provider/provider.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -12,12 +19,20 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return StreamProvider<Telomer?>.value(
+        catchError: (_,__) => null,
+        //initialData: AuthService().user,
+        initialData: null,
+        value: null,
+        //value: AuthService().user,
+        child: MaterialApp(
+        title: 'TeloME',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        //home: MyHomePage(title: 'TeloMe'),
+        home: Wrapper(),
       ),
-      home: MyHomePage(title: 'TeloMe'),
     );
   }
 }

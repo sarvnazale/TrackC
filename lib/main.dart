@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //import 'package:flutter/material.dart';
 //import 'package:firebase_core/firebase_core.dart';
 //import 'package:firebase_messaging/firebase_messaging.dart';
@@ -10,6 +11,22 @@ import 'pages/Progress.dart';
 //import 'package:provider/provider.dart';
 
 void main() async {
+=======
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:projectapp/Models/Telomer.dart';
+import 'package:projectapp/services/auth.dart';
+import "Wrapper.dart";
+import 'package:projectapp/pages/home.dart';
+import 'pages/Info.dart';
+import 'pages/Progress.dart';
+import 'package:provider/provider.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+>>>>>>> a2393fbd56a52e25b8e9286b0d43de445c917a93
   runApp(MyApp());
 }
 
